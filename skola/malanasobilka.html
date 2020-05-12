@@ -1,0 +1,197 @@
+<html>
+
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<script>
+			$(document).ready(function(){
+			// jQuery methods go here...
+				function pop_random(data) {
+					var index = Math.floor(Math.random() * data.length);
+					out = data.splice(index, 1)[0]
+					return out;
+				}
+				var exercises = [];
+				for (const i of Array(10).keys()) {
+					for (const j of Array(10).keys()) {
+						exercises.push(i+1 + " × " + (j+1));
+					};
+				};
+				console.log(exercises);
+				for (const x of Array(100).keys()) {
+					$("#cell-"+(x+1)).text(pop_random(exercises) + " = ");
+				};
+			});
+		</script>
+<style>
+td{
+	padding-left: 1em;
+	padding-right: 3em;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	border: 1px solid black;
+}
+tr{
+	border: 1px solid black;
+}
+tr.spacer{
+	height: 2em;
+}
+table{
+	border-spacing: 2em 1em;
+}
+</style>
+
+	</head>
+
+	<body>
+		<table>
+			<tr>
+				<td id="cell-1"></td>
+				<td id="cell-2"></td>
+				<td id="cell-3"></td>
+				<td id="cell-4"></td>
+				<td id="cell-5"></td>
+			</tr>
+			<tr>
+				<td id="cell-6"></td>
+				<td id="cell-7"></td>
+				<td id="cell-8"></td>
+				<td id="cell-9"></td>
+				<td id="cell-10"></td>
+			</tr>
+			<tr>
+				<td id="cell-11"></td>
+				<td id="cell-12"></td>
+				<td id="cell-13"></td>
+				<td id="cell-14"></td>
+				<td id="cell-15"></td>
+			</tr>
+			<tr>
+				<td id="cell-16"></td>
+				<td id="cell-17"></td>
+				<td id="cell-18"></td>
+				<td id="cell-19"></td>
+				<td id="cell-20"></td>
+			</tr>
+			<tr>
+				<td id="cell-21"></td>
+				<td id="cell-22"></td>
+				<td id="cell-23"></td>
+				<td id="cell-24"></td>
+				<td id="cell-25"></td>
+			</tr>
+			<tr class="spacer"></tr>
+			<tr>
+				<td id="cell-26"></td>
+				<td id="cell-27"></td>
+				<td id="cell-28"></td>
+				<td id="cell-29"></td>
+				<td id="cell-30"></td>
+			</tr>
+			<tr>
+				<td id="cell-31"></td>
+				<td id="cell-32"></td>
+				<td id="cell-33"></td>
+				<td id="cell-34"></td>
+				<td id="cell-35"></td>
+			</tr>
+			<tr>
+				<td id="cell-36"></td>
+				<td id="cell-37"></td>
+				<td id="cell-38"></td>
+				<td id="cell-39"></td>
+				<td id="cell-40"></td>
+			</tr>
+			<tr>
+				<td id="cell-41"></td>
+				<td id="cell-42"></td>
+				<td id="cell-43"></td>
+				<td id="cell-44"></td>
+				<td id="cell-45"></td>
+			</tr>
+			<tr>
+				<td id="cell-46"></td>
+				<td id="cell-47"></td>
+				<td id="cell-48"></td>
+				<td id="cell-49"></td>
+				<td id="cell-50"></td>
+			</tr>
+			<tr class="spacer"></tr>
+			<tr>
+				<td id="cell-51"></td>
+				<td id="cell-52"></td>
+				<td id="cell-53"></td>
+				<td id="cell-54"></td>
+				<td id="cell-55"></td>
+			</tr>
+			<tr>
+				<td id="cell-56"></td>
+				<td id="cell-57"></td>
+				<td id="cell-58"></td>
+				<td id="cell-59"></td>
+				<td id="cell-60"></td>
+			</tr>
+			<tr>
+				<td id="cell-61"></td>
+				<td id="cell-62"></td>
+				<td id="cell-63"></td>
+				<td id="cell-64"></td>
+				<td id="cell-65"></td>
+			</tr>
+			<tr>
+				<td id="cell-66"></td>
+				<td id="cell-67"></td>
+				<td id="cell-68"></td>
+				<td id="cell-69"></td>
+				<td id="cell-70"></td>
+			</tr>
+			<tr>
+				<td id="cell-71"></td>
+				<td id="cell-72"></td>
+				<td id="cell-73"></td>
+				<td id="cell-74"></td>
+				<td id="cell-75"></td>
+			</tr>
+			<tr class="spacer"></tr>
+			<tr>
+				<td id="cell-76"></td>
+				<td id="cell-77"></td>
+				<td id="cell-78"></td>
+				<td id="cell-79"></td>
+				<td id="cell-80"></td>
+			</tr>
+			<tr>
+				<td id="cell-81"></td>
+				<td id="cell-82"></td>
+				<td id="cell-83"></td>
+				<td id="cell-84"></td>
+				<td id="cell-85"></td>
+			</tr>
+			<tr>
+				<td id="cell-86"></td>
+				<td id="cell-87"></td>
+				<td id="cell-88"></td>
+				<td id="cell-89"></td>
+				<td id="cell-90"></td>
+			</tr>
+			<tr>
+				<td id="cell-91"></td>
+				<td id="cell-92"></td>
+				<td id="cell-93"></td>
+				<td id="cell-94"></td>
+				<td id="cell-95"></td>
+			</tr>
+			<tr>
+				<td id="cell-96"></td>
+				<td id="cell-97"></td>
+				<td id="cell-98"></td>
+				<td id="cell-99"></td>
+				<td id="cell-100"></td>
+			</tr>
+		</table>
+	</body>
+</html>
+
+
+
